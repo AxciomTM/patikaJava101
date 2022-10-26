@@ -13,7 +13,7 @@ public class Main
 			double r = girdi.nextDouble();
 			if (r>0){
 				alan = (pi*(r*r)*a)/360;
-				System.out.println("Dairenin alanı: "+alan);
+				System.out.println("Daire diliminin alanı: "+alan);
 			}else{
 				System.out.println("Pozitif bir değer giriniz!");
 			}
