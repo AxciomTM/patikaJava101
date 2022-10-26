@@ -17,22 +17,27 @@ public class Main
 	    int artiac = Math.abs(a+c);
 	    int artibc = Math.abs(b+c);
 
-        if (eksiab<c && c<artiab){
-            if (eksiac<b && b<artiac){
-                if (eksibc<a && a<artibc){
-                    int u = ((a+b+c)/2);
-	                double alan = ((double) (u*(u-a)*(u-b)*(u-c)) );
-	                double sonuc = Math.sqrt(alan);
-	                System.out.println("Üçgenin alanı: "+sonuc);
-                } else {
-                    System.out.println("Geçersiz bir üçgen girdiniz!");
-                }
-            } else {
-                System.out.println("Geçersiz bir üçgen girdiniz!");
-            }
-        } else {
-            System.out.println("Geçersiz bir üçgen girdiniz!");
-        }
+		if (a>0 && b>0 && c>0){
+			if (eksiab<c && c<artiab){
+				if (eksiac<b && b<artiac){
+					if (eksibc<a && a<artibc){
+						int u = ((a+b+c)/2);
+						double alan = ((double) (u*(u-a)*(u-b)*(u-c)) );
+						double sonuc = Math.sqrt(alan);
+						System.out.println("Üçgenin alanı: "+sonuc);
+					} else {
+						System.out.println("Geçersiz bir üçgen girdiniz!");
+					}
+				} else {
+					System.out.println("Geçersiz bir üçgen girdiniz!");
+				}
+			} else {
+				System.out.println("Geçersiz bir üçgen girdiniz!");
+			}
+		} else {
+			System.out.println("Geçersiz bir üçgen girdiniz!");
+		}
+        
 
 
 	}
