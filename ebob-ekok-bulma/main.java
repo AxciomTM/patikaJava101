@@ -28,7 +28,7 @@ public class Main {
             sayiEbob++;
         } while (sayiEbob < sayi1);
 
-        System.out.println("EBOB = " + ebob);
+        System.out.println("EBOB:: " + ebob);
         System.out.println("EKOK: " + ekok);
 
     }
