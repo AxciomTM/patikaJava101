@@ -10,10 +10,9 @@ public class Main {
         System.out.println(eleman+" elemanlı fibonacci serisi aşağıdaki gibidir;");
         do{
             sayi3=sayi1+sayi2;
-            System.out.print(sayi1 + " + " +sayi2 + " = "+sayi3);
+            System.out.println(sayi1 + " + " +sayi2 + " = "+sayi3);
             sayi1=sayi2;
             sayi2=sayi3;
-            System.out.println();
             sayac++;
         }while(sayac<=eleman);
     }
