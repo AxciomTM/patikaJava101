@@ -8,14 +8,14 @@ public class Main {
         int sayi = girdi.nextInt();
         System.out.print("Alınacak kuvveti giriniz: ");
         int kuvvet = girdi.nextInt();
-        int sonuc=0;
+        int sonuc=1;
         if(kuvvet==1) {
             System.out.println(sayi+" sayısının"+kuvvet+". kuvveti: "+sayi);
         } else if(kuvvet==0){
             System.out.println(sayi+" sayısının"+kuvvet+". kuvveti: 1");
         } else{
             for(int i=1 ; i<=kuvvet ; i++){
-                sonuc = sayi*sayi;
+                sonuc *= sayi;
             }
             System.out.println(sayi+" sayısının"+kuvvet+". kuvveti: "+sonuc);
         }
