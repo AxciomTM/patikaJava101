@@ -4,17 +4,18 @@ public class Main {
     private static final Scanner girdi = new Scanner(System.in);
     public static void main(String[] args)
     {
-        System.out.println("Bir sayı giriniz: ");
+        System.out.print("N sayısını giriniz: ");
         int sayi = girdi.nextInt();
-        double sonuc = 0;
-        double sayac = 1;
+        double toplam = 0;
+        double [] sayilar = new double [sayi];
 
-        do{
-            sonuc+=(1/sayac);
-            sayac++;
+        for (int i = 0; i < sayilar.length; i++) {
+            sayilar[i] = (double)(1)/(i+1);
+        }
+        for (int i = 0; i < sayilar.length; i++) {
+            toplam += sayilar[i];
+        }
+        System.out.println(toplam);
 
-        } while(sayac<=sayi);
-
-        System.out.println(sonuc);
     }
 }
